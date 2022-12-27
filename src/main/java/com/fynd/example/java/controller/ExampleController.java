@@ -1,9 +1,8 @@
-package com.fynd.groot.java.controller;
+package com.fynd.example.java.controller;
 
 
 
-import com.fynd.groot.java.service.ExampleService;
-import com.fynd.groot.java.service.impl.ExampleServiceImpl;
+import com.fynd.example.java.service.impl.ExampleServiceImpl;
 import com.sdk.platform.PlatformModels;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

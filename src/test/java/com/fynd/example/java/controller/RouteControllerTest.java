@@ -1,4 +1,4 @@
-package com.fynd.groot.java.controller;
+package com.fynd.example.java.controller;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -9,22 +9,6 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.forwardedUrl;
-
-//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-//class DefaultControllerTest {
-//
-//    @LocalServerPort
-//    private int port;
-//    @Mock
-//    private RestTemplate restTemplate;
-//
-//    @Test
-//    void redirect() {
-//        ResultMatcher res = restTemplate.getForObject("http://localhost:"+ port + "/company/1", ResultMatcher.class);
-//        System.out.println(res);
-//        assertThat(res).isEqualTo(forwardedUrl("/"));
-//    }
-//}
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(RouteController.class)

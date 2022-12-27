@@ -1,4 +1,4 @@
-package com.fynd.groot.java;
+package com.fynd.example.java;
 
 
 import com.fynd.extension.model.Extension;
@@ -18,7 +18,7 @@ import redis.clients.jedis.JedisPool;
 @SpringBootApplication
 @EnableAutoConfiguration
 @ComponentScan(basePackages = {"com.fynd.**", "com.fynd.**","com.gofynd","com.sdk.**"})
-public class GrootJavaApplication {
+public class ExampleJavaApplication {
 
 	private static final String REDIS_KEY = "ext_sample";
 	@Autowired
@@ -49,7 +49,7 @@ public class GrootJavaApplication {
 
 
 	public static void main(String[] args) {
-		SpringApplication.run(GrootJavaApplication.class, args);
+		SpringApplication.run(ExampleJavaApplication.class, args);
 	}
 
 	@Bean

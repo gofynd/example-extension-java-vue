@@ -1,6 +1,6 @@
-package com.fynd.groot.java.service;
+package com.fynd.example.java.service;
 
-import com.fynd.groot.java.properties.RedisProperties;
+import com.fynd.example.java.properties.RedisProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-# Sample Extension
+# Sample Java-Vue Extension
 
 
 ### Built With

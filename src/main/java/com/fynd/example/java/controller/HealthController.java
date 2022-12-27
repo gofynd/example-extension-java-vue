@@ -1,4 +1,4 @@
-package com.fynd.groot.java.controller;
+package com.fynd.example.java.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
