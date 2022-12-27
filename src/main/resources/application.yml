@@ -1,0 +1,18 @@
+redis :
+    host : 'redis://127.0.0.1:6379'
+    max-total: 1100
+    max-idle: 16
+    min-idle: 16
+    idle-time: 60
+    eviction: 30
+    tests: 3
+
+ext :
+    integration_id : '123'
+    api_key : '6332e2f8b798f0785d24533d'
+    api_secret : 'v0.sE3-c.M53PL2'
+    scopes : 'company/saleschannel'
+    base_url : 'https://4870-27-109-3-234.in.ngrok.io'
+    access_mode : 'offline'
+    cluster: 'https://api.fyndx0.de'
+
