@@ -17,7 +17,7 @@ import redis.clients.jedis.JedisPool;
 
 @SpringBootApplication
 @EnableAutoConfiguration
-@ComponentScan(basePackages = {"com.fynd.**", "com.fynd.**","com.gofynd","com.sdk.**"})
+@ComponentScan(basePackages = {"com.fynd.**","com.gofynd","com.sdk.**"})
 public class ExampleJavaApplication {
 
 	private static final String REDIS_KEY = "ext_sample";

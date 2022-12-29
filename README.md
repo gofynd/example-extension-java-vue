@@ -18,7 +18,7 @@ To get a local copy up and running follow these simple steps :
 List of mandatory Services to be downloaded on your System
 
     1. Java 14 or higher
-    2. Mevan 
+    2. Maven 
     2. Redis
 
 ### Steps to Execute

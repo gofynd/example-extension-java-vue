@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
-
 import javax.annotation.PreDestroy;
 import java.net.URI;
 import java.net.URISyntaxException;
