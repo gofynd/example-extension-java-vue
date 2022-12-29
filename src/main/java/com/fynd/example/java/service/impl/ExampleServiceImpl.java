@@ -1,7 +1,7 @@
-package com.fynd.groot.java.service.impl;
+package com.fynd.example.java.service.impl;
 
+import com.fynd.example.java.service.ExampleService;
 import com.fynd.extension.utils.ExtensionContext;
-import com.fynd.groot.java.service.ExampleService;
 import com.sdk.platform.PlatformClient;
 import com.sdk.platform.PlatformModels;
 import org.springframework.stereotype.Service;

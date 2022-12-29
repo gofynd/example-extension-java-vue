@@ -1,8 +1,7 @@
-package com.fynd.groot.java.service;
+package com.fynd.example.java.service;
 
 import com.fynd.extension.utils.ExtensionContext;
-import com.fynd.groot.java.controller.ExampleController;
-import com.fynd.groot.java.service.impl.ExampleServiceImpl;
+import com.fynd.example.java.service.impl.ExampleServiceImpl;
 import com.sdk.platform.PlatformClient;
 import com.sdk.platform.PlatformService;
 import com.sdk.platform.PlatformModels;
@@ -12,7 +11,6 @@ import org.mockito.Mock;
 import org.mockito.MockedStatic;
 import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.test.util.ReflectionTestUtils;
 
 import java.io.IOException;

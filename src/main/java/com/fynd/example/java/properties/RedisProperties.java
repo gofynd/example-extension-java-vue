@@ -1,4 +1,4 @@
-package com.fynd.groot.java.properties;
+package com.fynd.example.java.properties;
 
 import lombok.Getter;
 import lombok.Setter;

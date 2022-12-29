@@ -1,4 +1,4 @@
-package com.fynd.groot.java.service;
+package com.fynd.example.java.service;
 
 import com.sdk.platform.PlatformModels;
 
