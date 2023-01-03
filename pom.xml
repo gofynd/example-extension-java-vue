@@ -12,7 +12,7 @@
 	<groupId>com.fynd</groupId>
 	<artifactId>example-extension-java-vue</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Example Extension Java Vue</name>
+	<name>groot</name>
 	<description>Example java extension</description>
 	<properties>
 		<java.version>11</java.version>
@@ -31,12 +31,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.github.tomakehurst</groupId>
-			<artifactId>wiremock-standalone</artifactId>
-			<version>2.27.2</version>
-			<scope>test</scope>
-		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-inline -->
 		<dependency>
 			<groupId>org.mockito</groupId>

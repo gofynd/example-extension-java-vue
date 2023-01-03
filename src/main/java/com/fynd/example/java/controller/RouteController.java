@@ -1,4 +1,4 @@
-package com.fynd.groot.java.controller;
+package com.fynd.example.java.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
