@@ -21,3 +21,35 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Mevan
+target
+
+
+# For FrontEnd VueJS
+.DS_Store
+**/.DS_Store
+app/node_modules
+app/dist
+
+
+# local env files
+app/.env.local
+app/.env.*.local
+
+# Log files
+app/npm-debug.log*
+app/yarn-debug.log*
+app/yarn-error.log*
+app/pnpm-debug.log*
+
+# Editor directories and files
+.vscode
+.idea
+app/.idea
+app/.vscode
+app/*.suo
+app/*.ntvs*
+app/*.njsproj
+app/*.sln
+app/*.sw?
