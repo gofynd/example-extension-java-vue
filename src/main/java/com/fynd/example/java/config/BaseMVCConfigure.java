@@ -1,4 +1,4 @@
-package com.fynd.groot.java.config;
+package com.fynd.example.java.config;
 
 
 import com.fynd.extension.middleware.ApplicationInterceptor;

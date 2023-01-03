@@ -1,10 +1,10 @@
-package com.fynd.groot.java;
+package com.fynd.example.java;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GrootJavaApplicationTests {
+class ExampleJavaApplicationTests {
 
 	@Test
 	void contextLoads() {
