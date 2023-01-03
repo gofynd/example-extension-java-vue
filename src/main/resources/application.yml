@@ -8,24 +8,17 @@ redis :
     tests: 3
 
 ext :
-    integration_id : '123'
-    api_key : '6332e2f8b798f0785d24533d'
-    api_secret : 'v0.sE3-c.M53PL2'
-    scopes : 'company/saleschannel'
-    base_url : 'https://4870-27-109-3-234.in.ngrok.io'
-    access_mode : 'offline'
-    cluster: 'https://api.fyndx0.de'
-    # integration_id : '<integration_id>'
-    # api_key : '<api_key>'
-    # api_secret : '<api_secret>'
-    # scopes : '<scopes>'
-    # base_url : '<base_url>'
-    # access_mode : '<offline/online>'
-    # cluster: 'https://api.fynd.com'
+    integration_id : '<integration_id>'
+    api_key : '<api_key>'
+    api_secret : '<api_secret>'
+    scopes : '<scopes>'
+    base_url : '<base_url>'
+    access_mode : '<offline/online>'
+    cluster: 'https://api.fynd.com'
 
     # Example
     # integration_id : '123'
-    # api_key : 'h29ufewu8sdhifue'
+    # api_key : 'dsdofij340jfis'
     # api_secret : '92hueuf9'
     # scopes : 'company/saleschannel'
     # base_url : 'https://4870-27-109-3-234.in.ngrok.io'
