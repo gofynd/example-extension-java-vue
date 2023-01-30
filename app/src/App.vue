@@ -7,10 +7,9 @@
 <script>
 
 export default {
-  name: 'App' 
+  name: 'App',
 }
 </script>
 
-<style lang="less">
-@import './../node_modules/@gofynd/nitrozen-vue/dist/nitrozen.css';
+<style>
 </style>

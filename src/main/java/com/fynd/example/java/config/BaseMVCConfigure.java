@@ -25,6 +25,6 @@ public class BaseMVCConfigure implements WebMvcConfigurer {
 
     public void addInterceptors(InterceptorRegistry registry) {
 
-        registry.addInterceptor(this.platformInterceptor).addPathPatterns(new String[]{"/api/v1/**"}).order(Integer.MAX_VALUE);
+        registry.addInterceptor(this.platformInterceptor).addPathPatterns(new String[]{"/api/v1.0/**"}).order(Integer.MAX_VALUE);
     }
 }
