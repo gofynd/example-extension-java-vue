@@ -31,3 +31,6 @@ redis :
 #                 handler: sampleHandler
 #                 category: "company"
 #                 version: 2
+
+fdk-extension:
+  version: 0.0.49
