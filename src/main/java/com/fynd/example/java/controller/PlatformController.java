@@ -18,9 +18,7 @@ public class PlatformController extends BasePlatformController {
     @GetMapping(value = "/applications", produces = "application/json")
     public ConfigurationPlatformModels.ApplicationsResponse getApplications(HttpServletRequest request) {
         try {
-            System.out.println("What? I'm here!!!");
             PlatformClient platformClient = (PlatformClient) request.getAttribute("platformClient");
-            System.out.println("I'm here!!!");
             ConfigurationPlatformModels.ApplicationsResponse applications
                     = platformClient.configuration.getApplications(1, 100, "");
 
