@@ -7,9 +7,8 @@ redis :
     eviction: 30
     tests: 3
 
-# Example
+# # Example
 # ext :
-#     integration_id : "xxx-xxx-xxxx" #Key needs to be replaced with extension integration_id
 #     api_key : "xxxx-xxxx-xxxxx" #Key needs to be replaced with extension api_key
 #     api_secret : "xxxx-xxxx-xxxxx" #Key needs to be replaced with extension api_secret
 #     scopes : "company/saleschannel"
