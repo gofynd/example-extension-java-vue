@@ -47,4 +47,4 @@ Use the Below Controller to Test the Application :
 
 * HealthController : Uses the Actuator Health points to check if all the resources are stable and active
 
-        http://localhost:8080/_heathz
+        http://localhost:8080/_healthz

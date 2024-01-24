@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '../views/Home.vue';
+import Admin from '../views/Admin.vue';
 import { routeGuard } from './guard';
 Vue.use(VueRouter)
 
@@ -11,6 +12,13 @@ const routes = [
     beforeEnter: routeGuard,
     component: Home
   },
+  {
+    path: '/admin',
+    name: 'Admin',
+    beforeEnter: routeGuard,
+    component: Admin
+  },
+
   // {
   //   path: '/company/:company_id/about',
   //   beforeEnter: routeGuard,
