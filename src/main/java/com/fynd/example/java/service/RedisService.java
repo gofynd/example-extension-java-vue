@@ -27,7 +27,7 @@ public class RedisService {
 
     @Bean(name = "redis-pool")
     public JedisPool getJedis() throws URISyntaxException {
-        logger.info("Creating JEDIS pool connection on Host: {} ", "redis://127.0.0.1:6379");
+        logger.info("Creating JEDIS pool connection on Host: {} ", redisProperties.getHost());
         JedisPoolConfig poolConfig = new JedisPoolConfig();
         poolConfig.setMaxTotal(redisProperties.getMaxTotal());
         poolConfig.setMaxIdle(redisProperties.getMaxIdle());
@@ -41,9 +41,7 @@ public class RedisService {
                 .toMillis());
         poolConfig.setNumTestsPerEvictionRun(redisProperties.getTests());
         poolConfig.setBlockWhenExhausted(true);
-        URI redisUri = new URI(redisProperties.getHost());
-
-        jedisPool = new JedisPool(poolConfig, redisUri.getHost());
+        jedisPool = new JedisPool(poolConfig, redisProperties.getHost());
         return jedisPool;
     }
 

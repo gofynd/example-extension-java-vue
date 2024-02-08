@@ -4,7 +4,10 @@ package com.fynd.example.java;
 import com.fynd.extension.model.Extension;
 import com.fynd.extension.model.ExtensionCallback;
 import com.fynd.extension.model.ExtensionProperties;
+import com.fynd.extension.session.Session;
 import com.fynd.extension.storage.RedisStorage;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.SpringApplication;
@@ -20,7 +23,10 @@ import redis.clients.jedis.JedisPool;
 @ComponentScan(basePackages = {"com.fynd.**","com.gofynd","com.sdk.**"})
 public class ExampleJavaApplication {
 
-	private static final String REDIS_KEY = "ext_sample";
+	private static final String REDIS_KEY = "REDIS";
+
+	private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
 	@Autowired
 	ExtensionProperties extensionProperties;
 
@@ -28,33 +34,32 @@ public class ExampleJavaApplication {
 	@Qualifier("redis-pool")
 	JedisPool jedis;
 
-	ExtensionCallback callbacks = new ExtensionCallback(
-			(request) ->
-			{
-				System.out.println("in auth callback");
-				String company_id = (String) request.get("company_id");
-				return extensionProperties.getBase_url() + "/company/" + company_id;
-			},
-			(request) ->
-			{
-				System.out.println("in install callback");
-				return "";
-			},
-			(request) ->
-			{
-				System.out.println("in uninstall callback");
-				return "";
-			}
-	);
 
+	ExtensionCallback callbacks = new ExtensionCallback((request) -> {
+		Session fdkSession = (Session) request.getAttribute("session");
+		logger.info("In Auth callback");
+		return extensionProperties.getBaseUrl() + "/company/" + fdkSession.getCompanyId();
+	}, (context) -> {
+		logger.info("In install callback");
+		return  extensionProperties.getBaseUrl();
+
+	}, (fdkSession) -> {
+		logger.info("In uninstall callback");
+		return extensionProperties.getBaseUrl();
+
+	}, (fdkSession) -> {
+		logger.info("In auto-install callback");
+		return extensionProperties.getBaseUrl();
+	});
 
 	public static void main(String[] args) {
+		System.setProperty("spring.devtools.restart.enabled", "false");
 		SpringApplication.run(ExampleJavaApplication.class, args);
 	}
 
 	@Bean
 	@DependsOn({"redis-pool"})
-	public Extension getExtension() {
+	public com.fynd.extension.model.Extension getExtension() {
 		Extension extension = new Extension();
 		return extension.initialize(
 				extensionProperties,
