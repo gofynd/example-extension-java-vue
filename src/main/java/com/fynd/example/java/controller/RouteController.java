@@ -14,5 +14,8 @@ public class RouteController {
     public String redirect() {
             return "forward:/";
     }
-
+    @RequestMapping("/company/{company_id}/application/{application_id}")
+    public String redirectToAppHome() {
+        return "forward:/";
+    }
 }
