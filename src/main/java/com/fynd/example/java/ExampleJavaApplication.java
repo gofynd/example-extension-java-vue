@@ -11,7 +11,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -19,8 +18,7 @@ import org.springframework.context.annotation.DependsOn;
 import redis.clients.jedis.JedisPool;
 
 @SpringBootApplication
-@EnableAutoConfiguration
-@ComponentScan(basePackages = {"com.fynd.**","com.gofynd","com.sdk.**"})
+@ComponentScan(basePackages = {"com.fynd.**","com.sdk.**"})
 public class ExampleJavaApplication {
 
 	private static final String REDIS_KEY = "REDIS";

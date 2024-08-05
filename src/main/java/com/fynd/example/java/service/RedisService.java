@@ -35,6 +35,7 @@ public class RedisService {
         poolConfig.setTestOnBorrow(true);
         poolConfig.setTestOnReturn(true);
         poolConfig.setTestWhileIdle(true);
+        poolConfig.setJmxEnabled(false);
         poolConfig.setMinEvictableIdleTimeMillis(Duration.ofSeconds(redisProperties.getIdleTime())
                 .toMillis());
         poolConfig.setTimeBetweenEvictionRunsMillis(Duration.ofSeconds(redisProperties.getEviction())

@@ -25,8 +25,6 @@ List of mandatory Services to be downloaded on your System
 
 * Clone the project : [Git link](https://github.com/gofynd/example-extension-java-vue)
 * Open the Spring boot project on any IDE
-* Create a Configuration to run this application using Local Spring profile :
-  ```-Dspring.profiles.active=local ```
 * Build Front-end dist files
     ```
     cd app
@@ -35,8 +33,7 @@ List of mandatory Services to be downloaded on your System
     ```
 * Run the application
   ```
-  mvn clean
-  mvn package
+  mvn clean install
   mvn spring-boot:run  
   ```
 * Server starts on *8080*
