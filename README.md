@@ -1,8 +1,7 @@
 # Build a Fynd Extension using Node.js + Vue.js(vue3)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
 
-[![Coverage Status][coveralls-badge]]([coveralls-url])
 
 ## Getting Started
 
@@ -25,7 +24,7 @@ This project outlines the development process for a Fynd extension that displays
     1. [Java 14](https://www.java.com/en/) or higher
     2. [Maven](https://maven.apache.org/download.cgi) 
     3. [Redis](https://redis.io)
-    4. [NodeJS 14](https://docs.npmjs.com/) or higher
+    4. [NodeJS 16](https://docs.npmjs.com/) or higher
 
 * Clone the project : [Git link](https://github.com/gofynd/example-extension-java-vue)
 * Open the Spring boot project on any IDE
