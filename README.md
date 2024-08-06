@@ -24,7 +24,7 @@ This project outlines the development process for a Fynd extension that displays
     1. [Java 14](https://www.java.com/en/) or higher
     2. [Maven](https://maven.apache.org/download.cgi) 
     3. [Redis](https://redis.io)
-    4. [NodeJS 14](https://docs.npmjs.com/) or higher
+    4. [NodeJS 16](https://docs.npmjs.com/) or higher
 
 * Clone the project : [Git link](https://github.com/gofynd/example-extension-java-vue)
 * Open the Spring boot project on any IDE
