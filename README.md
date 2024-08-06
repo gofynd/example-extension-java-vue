@@ -27,7 +27,7 @@ List of mandatory Services to be downloaded on your System
 * Open the Spring boot project on any IDE
 * Build Front-end dist files
     ```
-    cd app
+    cd frontend
     npm i 
     npm run build
     ```
