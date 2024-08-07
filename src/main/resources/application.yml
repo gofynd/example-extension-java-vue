@@ -46,4 +46,3 @@ ext:
   api_secret: ${EXTENSION_API_SECRET}
   scopes: ""
   base_url: ${EXTENSION_BASE_URL}
-  cluster: ${EXTENSION_CLUSTER_URL}
