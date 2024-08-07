@@ -1,42 +1,53 @@
-# Sample Java-Vue Extension
-
-
-### Built With
-
-* [Spring Boot Framework](https://spring.io/projects/spring-boot)
-* [Java 11](https://www.java.com/en/)
-* [Redis](https://redis.io/)
-* NodeJS 14 or higher
+# Build a Fynd Extension using Node.js + Vue.js(vue3)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
 
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple steps :
+This project outlines the development process for a Fynd extension that displays product listings for a company and its associated applications. By following this guide, you'll be able to set up the development environment, build the extension locally, and understand the testing procedures.
 
+## Quick start
 ### Prerequisites
-List of mandatory Services to be downloaded on your System
+* You have fdk-cli installed globally [install](https://github.com/gofynd/fdk-cli)
+* You have created a [partner account](https://partners.fynd.com).
+* You have created a [development account](https://partners.fynd.com/help/docs/partners/testing-extension/development-acc#create-development-account) and [populated test data](https://partners.fynd.com/help/docs/partners/testing-extension/development-acc#populate-test-data) in it.
 
-    1. Java 14 or higher
-    2. Maven 
-    2. Redis
+* List of mandatory Services to be downloaded on your System
 
-### Steps to Execute
+    1. [Java 14](https://www.java.com/en/) or higher
+    2. [Maven](https://maven.apache.org/download.cgi) 
+    3. [Redis](https://redis.io)
+    4. [NodeJS 16](https://docs.npmjs.com/) or higher
 
-* Clone the project : [Git link](https://github.com/gofynd/example-extension-java-vue)
-* Open the Spring boot project on any IDE
-* Build Front-end dist files
-    ```
-    cd app
-    npm i 
-    npm run build
-    ```
-* Run the application
-  ```
-  mvn clean install
-  mvn spring-boot:run  
-  ```
-* Server starts on *8080*
+
+## Install Template Locally
+To initialize your extension template locally, run the following command:
+```shell
+fdk extension init
+```
+Enter your preferred extension name and type, then select the `Java + Vue 2 + Redis` option.
+
+## Local Development
+To start local development, execute the following command:
+```shell
+fdk extension preview
+```
+This command will provide a partner’s panel URL where you can interact with your extension. For more information, please read this [guide](https://github.com/gofynd/fdk-cli?tab=readme-ov-file#extension-commands).
+
+
+## Build for production
+Build frontend.
+
+Using yarn:
+```shell
+cd frontend && yarn run build
+```
+Using npm:
+```shell
+cd frontend && npm run build
+```
+
 
 
 ### Tests

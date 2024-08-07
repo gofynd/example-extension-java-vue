@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Collections;
 
 @RestController
-@RequestMapping("/api/v1.0")
+@RequestMapping("/api")
 @Slf4j
 public class PlatformController extends BasePlatformController {
 
