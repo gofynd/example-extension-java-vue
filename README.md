@@ -9,15 +9,9 @@ This project outlines the development process for a Fynd extension that displays
 
 ## Quick start
 ### Prerequisites
-* You have fdk-cli installed [install](https://github.com/gofynd/fdk-cli)
+* You have fdk-cli installed globally [install](https://github.com/gofynd/fdk-cli)
 * You have created a [partner account](https://partners.fynd.com).
 * You have created a [development account](https://partners.fynd.com/help/docs/partners/testing-extension/development-acc#create-development-account) and [populated test data](https://partners.fynd.com/help/docs/partners/testing-extension/development-acc#populate-test-data) in it.
-* You have created an [extension](https://partners.fynd.com) in partner panel. if not, you can follow [extension guide](https://partners.fynd.com/help/docs/partners/getting-started/create-extension) to create an extension.
-* Update below environment variable value in `.env` file, This details you can get from partners panel
-    - EXTENSION_API_KEY:`Extension api key`
-    - EXTENSION_API_SECRET: `Extension api secret`
-
-## Steps to Execute
 
 * List of mandatory Services to be downloaded on your System
 
@@ -26,45 +20,20 @@ This project outlines the development process for a Fynd extension that displays
     3. [Redis](https://redis.io)
     4. [NodeJS 16](https://docs.npmjs.com/) or higher
 
-* Clone the project : [Git link](https://github.com/gofynd/example-extension-java-vue)
-* Open the Spring boot project on any IDE
 
-
-### Install dependencies
-
-**Install backend dependency**
-
+## Install Template Locally
+To initialize your extension template locally, run the following command:
 ```shell
-mvn clean install
+fdk extension init
 ```
+Enter your preferred extension name and type, then select the `Java + Vue 2 + Redis` option.
 
-**Install frontend dependency**
-
-Using yarn:
+## Local Development
+To start local development, execute the following command:
 ```shell
-yarn install --cwd ./frontend
+fdk extension preview
 ```
-Using npm:
-```shell
-npm install --prefix ./frontend
-```
-
-
-## Local development
-To start development locally you need to start tunnel on `FRONTEND_PORT` defined in .env file. To start tunnel you can use `fdk extension preview --port <FRONTEND_PORT>`, it will provide partners panel URL  
-
-> Before visiting partners panel URL provided by extension preview command you need to hit below command in new terminals
-
-___Start backend server (in terminal 1)___
-```shell
-mvn spring-boot:run  
-```
-___Start frontend dev server (in terminal 2)___
-```shell
-cd frontend && npm run dev
-```
-
-This command will start backend and frontend server. Your frontend server will be working as watch mode and changes you make locally will be directly visible in partners panel.
+This command will provide a partner’s panel URL where you can interact with your extension. For more information, please read this [guide](https://github.com/gofynd/fdk-cli?tab=readme-ov-file#extension-commands).
 
 
 ## Build for production
