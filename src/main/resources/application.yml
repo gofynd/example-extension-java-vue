@@ -37,3 +37,13 @@ fdk-extension:
 spring:
     profiles:
         active: local
+
+server:
+  port: ${BACKEND_PORT:8080}
+
+ext:
+  api_key: ${EXTENSION_API_KEY}
+  api_secret: ${EXTENSION_API_SECRET}
+  scopes: ""
+  base_url: ${EXTENSION_BASE_URL}
+  cluster: ${EXTENSION_CLUSTER_URL}
