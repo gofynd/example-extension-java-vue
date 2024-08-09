@@ -1,9 +1,11 @@
+# FDK Extension Configuration (same as in the default profile)
 fdk-extension:
-  version: '0.5.0'
+  version: '0.5.0'  # Version of the FDK extension being used
 
+# Spring Boot Developer Tools Configuration (for production environment)
 spring:
   devtools:
     restart:
-      enabled: false
+      enabled: false  # Disable automatic restart in production for performance reasons
     livereload:
-      enabled: false
+      enabled: false  # Disable LiveReload in production as it's only useful for development
