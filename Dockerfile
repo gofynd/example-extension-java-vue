@@ -14,5 +14,7 @@ RUN mvn clean package -DskipTests
 FROM openjdk:17-slim
 WORKDIR /app
 COPY --from=backend-builder /app/target/example-extension-java-vue-0.0.1-SNAPSHOT.jar ./example-extension-java-vue-0.0.1-SNAPSHOT.jar
+COPY application-prod.yml ./application-prod.yml
+ENV SPRING_PROFILES_ACTIVE=prod
 EXPOSE 8080
 CMD ["java", "-jar", "example-extension-java-vue-0.0.1-SNAPSHOT.jar"]

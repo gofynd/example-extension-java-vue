@@ -1,3 +1,14 @@
+# Redis Configuration
+# Replace your REDIS host url and properties
+#redis:
+#  host: 'redis://127.0.0.1:6379'
+#  max-total: 1100
+#  max-idle: 16
+#  min-idle: 16
+#  idle-time: 60
+#  eviction: 30
+#  tests: 3
+
 # FDK Extension Configuration (same as in the default profile)
 fdk-extension:
   version: '0.5.0'  # Version of the FDK extension being used
