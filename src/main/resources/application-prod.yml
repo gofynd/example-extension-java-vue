@@ -1,36 +1,3 @@
-redis :
-    host : 'redis://127.0.0.1:6379'
-    max-total: 1100
-    max-idle: 16
-    min-idle: 16
-    idle-time: 60
-    eviction: 30
-    tests: 3
-
-# # Example
-# ext :
-#     api_key : "xxxx-xxxx-xxxxx" #Key needs to be replaced with extension api_key
-#     api_secret : "xxxx-xxxx-xxxxx" #Key needs to be replaced with extension api_secret
-#     scopes : "company/saleschannel"
-#     base_url : "https://ad23-103-197-222-199.in.ngrok.io"
-#     access_mode : "offline"
-#     cluster: "https://api.fynd.com"
-#     webhook:
-#         api_path: "/event/webhook"
-#         notification_email: "test@gmail.com"
-#         subscribed_saleschannel: "specific"
-#         event_map:
-#             -
-#                 name: "article/delete"
-#                 handler: sampleHandler
-#                 category: "company"
-#                 version: 1
-#             -
-#                 name: "product-size/create"
-#                 handler: sampleHandler
-#                 category: "company"
-#                 version: 2
-
 fdk-extension:
   version: '0.5.0'
 
