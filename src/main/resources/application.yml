@@ -43,3 +43,5 @@ spring:
       enabled: true  # Automatically restart the server when files are changed
     livereload:
       enabled: true  # Enable LiveReload to automatically refresh the browser when changes are detected
+  profiles:
+    active: dev

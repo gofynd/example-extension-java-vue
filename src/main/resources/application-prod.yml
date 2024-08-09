@@ -20,3 +20,5 @@ spring:
       enabled: false  # Disable automatic restart in production for performance reasons
     livereload:
       enabled: false  # Disable LiveReload in production as it's only useful for development
+  profiles:
+    active: prod
