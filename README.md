@@ -38,6 +38,17 @@ List of mandatory Services to be downloaded on your System
   ```
 * Server starts on *8080*
 
+### Docker Instructions
+
+To run the application using Docker, follow these steps:
+* Build the Docker image:
+    ```shell
+    docker build -t my-java-react-app .
+    ```
+* Run the Docker container
+  ```
+  docker run -p 8080:8080 -e SPRING_PROFILES_ACTIVE=dev my-java-react-app 
+  ```
 
 ### Tests
 Use the Below Controller to Test the Application :

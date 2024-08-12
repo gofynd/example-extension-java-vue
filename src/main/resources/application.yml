@@ -1,11 +1,12 @@
-redis :
-    host : 'redis://127.0.0.1:6379'
-    max-total: 1100
-    max-idle: 16
-    min-idle: 16
-    idle-time: 60
-    eviction: 30
-    tests: 3
+# Redis Configuration
+redis:
+  host: 'redis://127.0.0.1:6379'  # Local Redis server connection URL
+  max-total: 1100                 # Maximum number of connections in the Redis pool
+  max-idle: 16                    # Maximum number of idle connections in the pool
+  min-idle: 16                    # Minimum number of idle connections in the pool
+  idle-time: 60                   # Minimum amount of time an object may sit idle in the pool before it is eligible for eviction (in seconds)
+  eviction: 30                    # Time between eviction runs (in seconds)
+  tests: 3                        # Number of objects to examine per eviction run
 
 # # Example
 # ext :
@@ -31,9 +32,16 @@ redis :
 #                 category: "company"
 #                 version: 2
 
+# FDK Extension Configuration
 fdk-extension:
-  version: '0.5.0'
+  version: '0.5.0'  # Version of the FDK extension being used
 
+# Spring Boot Developer Tools Configuration (for local development)
 spring:
-    profiles:
-        active: local
+  devtools:
+    restart:
+      enabled: true  # Automatically restart the server when files are changed
+    livereload:
+      enabled: true  # Enable LiveReload to automatically refresh the browser when changes are detected
+  profiles:
+    active: dev
