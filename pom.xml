@@ -19,13 +19,11 @@
 
 	<properties>
 		<java.version>17</java.version>
-		<maven.compiler.target>11</maven.compiler.target>
+		<maven.compiler.target>17</maven.compiler.target>
 		<retrofit.version>2.3.0</retrofit.version>
 		<okhttp3.version>3.14.7</okhttp3.version>
 		<fdk-extension.version>0.6.4</fdk-extension.version>
 		<fdk-client.version>1.4.7</fdk-client.version>
-		<maven.compiler.source>11</maven.compiler.source>
-		<net.bytebuddy.experimental>true</net.bytebuddy.experimental>
 	</properties>
 
 
@@ -155,13 +153,6 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<configuration>
-					<argLine>-Dnet.bytebuddy.experimental=true</argLine>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
