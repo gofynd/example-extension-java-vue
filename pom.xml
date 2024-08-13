@@ -24,6 +24,7 @@
 		<okhttp3.version>3.14.7</okhttp3.version>
 		<fdk-extension.version>0.6.4</fdk-extension.version>
 		<fdk-client.version>1.4.7</fdk-client.version>
+		<net.bytebuddy.experimental>true</net.bytebuddy.experimental>
 	</properties>
 
 
@@ -153,6 +154,13 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<argLine>-Dnet.bytebuddy.experimental=true</argLine>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
