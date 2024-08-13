@@ -3,12 +3,12 @@ name: Run tests and coverage
 on: [push, pull_request]
 
 jobs:
-  run-tests:
+  run-test-cases:
     runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest, windows-latest, macos-latest,]
         java-version: [11, 17]
 
     steps:
@@ -29,7 +29,7 @@ jobs:
         run: mvn clean test
 
       - name: Coveralls (Uploading test report)
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: ${{ github.ref == 'refs/heads/github-workflow' }}
         uses: coverallsapp/github-action@main
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
