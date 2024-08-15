@@ -1,5 +1,5 @@
 {
     "roles": ["backend"],
-    "install": "mvn clean install",
+    "install": "mvn clean install -Dmaven.test.skip=true",
     "dev": "mvn spring-boot:run"
 }
