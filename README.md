@@ -16,7 +16,6 @@ This project outlines the development process for a Fynd extension that displays
 * You have created a [partner account](https://partners.fynd.com).
 * You have created a [development account](https://partners.fynd.com/help/docs/partners/testing-extension/development-acc#create-development-account) and [populated test data](https://partners.fynd.com/help/docs/partners/testing-extension/development-acc#populate-test-data) in it.
 * You have downloaded and installed following on your System
-
     1. [Java 14](https://www.java.com/en/) or higher
     2. [Maven](https://maven.apache.org/download.cgi)
     3. [Redis](https://redis.io)
