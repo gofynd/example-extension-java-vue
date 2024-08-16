@@ -46,13 +46,10 @@ To run the application using Docker in Production environment, follow these step
   ```
   docker run -p 8080:8080 my-java-vue-app 
   ```
-### Tests
-Use the Below Controller to Test the Application :
+To Run the extension with Docker locally, ensure you first prepare your environment:
 
-* HealthController : Uses the Actuator Health points to check if all the resources are stable and active
-
-        http://localhost:8080/_healthz
-
+Fill in all the required values in the application-prod.yml file.
+After setting up your .yml file, you can proceed with the Docker commands listed above to build and run your extension locally.
 
 ## Database Configuration
 
