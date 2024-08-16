@@ -1,8 +1,8 @@
 # SQLite Configuration
-# Replace your SQLite DB url
-#sqlite:
-#  db:
-#    url: 'jdbc:sqlite:session_storage.db'
+# Replace your SQLite DB PROD url
+sqlite:
+  db:
+    url: 'jdbc:sqlite:session_storage.db'
 
 # FDK Extension Configuration (same as in the default profile)
 fdk-extension:
@@ -17,3 +17,12 @@ spring:
       enabled: false  # Disable LiveReload in production as it's only useful for development
   profiles:
     active: prod
+
+server:
+  port: ${BACKEND_PORT:8080}
+
+ext:
+  api_key: ${EXTENSION_API_KEY}
+  api_secret: ${EXTENSION_API_SECRET}
+  scopes: ""
+  base_url: ${EXTENSION_BASE_URL}
