@@ -32,6 +32,7 @@ public class ExampleJavaApplication {
 
 	ExtensionCallback callbacks = new ExtensionCallback((request) -> {
 		Session fdkSession = (Session) request.getAttribute("session");
+		logger.debug("In Auth callback");
 		if(request.getParameter("application_id") != null){
 			return extensionProperties.getBaseUrl() + "/company/" + fdkSession.getCompanyId() + "/application/" + request.getParameter("application_id");
 		}
