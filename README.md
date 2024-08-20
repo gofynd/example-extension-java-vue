@@ -48,7 +48,7 @@ To run the application using Docker in Production environment, follow these step
   ```
 To Run the extension with Docker locally, ensure you first prepare your environment:
 
-Fill in all the required values in the application-prod.yml file.
+Fill in all the required values in the ``application-prod.yml`` file.
 After setting up your .yml file, you can proceed with the Docker commands listed above to build and run your extension locally.
 
 ## Database Configuration
