@@ -6,6 +6,7 @@
 
 [coveralls-badge]: https://coveralls.io/repos/github/gofynd/example-extension-java-vue/badge.svg?branch=main&&kill_cache=1
 [coveralls-url]: https://coveralls.io/github/gofynd/example-extension-java-vue?branch=main
+[![Coverage Status][coveralls-badge]]([coveralls-url])
 
 This project outlines the development process for a Fynd extension that displays product listings for a company and its associated applications. By following this guide, you'll be able to set up the development environment, build the extension locally, and understand the testing procedures.
 
