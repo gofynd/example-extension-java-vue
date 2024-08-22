@@ -15,7 +15,7 @@ public class WebhookController {
     @Autowired
     WebhookService webhookService;
 
-    @PostMapping(path = "/event/webhook")
+    @PostMapping(path = "/api/webhook-events")
     public ResponseEntity<Object> receiveWebhookEvents(HttpServletRequest httpServletRequest) {
         try {
             webhookService.processWebhook(httpServletRequest);
