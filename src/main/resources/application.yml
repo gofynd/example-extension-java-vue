@@ -49,4 +49,12 @@ ext:
   api_secret: ${EXTENSION_API_SECRET}
   scopes: ""
   base_url: ${EXTENSION_BASE_URL}
+  webhook:
+    api_path: "/api/webhook-events"
+    notification_email: "dev@fynd.com"
+    event_map:
+      - name: "product/delete"
+        handler: sampleHandler
+        category: "company"
+        version: 1
   
