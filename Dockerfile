@@ -17,4 +17,4 @@ COPY --from=backend-builder target/example-extension-java-vue-0.0.1-SNAPSHOT.jar
 COPY src/main/resources/application-prod.yml ./application-prod.yml
 ENV SPRING_PROFILES_ACTIVE=prod
 EXPOSE 8080
-CMD ["java", "-jar", "example-extension-java-react-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "example-extension-java-vue-0.0.1-SNAPSHOT.jar"]
