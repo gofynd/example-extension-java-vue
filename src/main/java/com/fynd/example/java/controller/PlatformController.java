@@ -22,7 +22,7 @@ public class PlatformController extends BasePlatformController {
     public CatalogPlatformModels.ProductListingResponseV2 getProducts(HttpServletRequest request) {
         try {
             PlatformClient platformClient = (PlatformClient) request.getAttribute("platformClient");
-            return platformClient.catalog.getProducts(Collections.emptyList(), Collections.emptyList(), Collections.emptyList(), Collections.emptyList(), Collections.emptyList(), "", "",Collections.emptyList(), "", Collections.emptyList(),1, 10, "", "", "");
+            return platformClient.catalog.getProducts(Collections.emptyList(), Collections.emptyList(), Collections.emptyList(), Collections.emptyList(), Collections.emptyList(), "", "", Collections.emptyList(), "", Collections.emptyList(), 1, 10, "", "", "");
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
