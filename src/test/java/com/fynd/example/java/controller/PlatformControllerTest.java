@@ -71,7 +71,7 @@ public class PlatformControllerTest {
     @Test
     void testGetProducts_Success() throws Exception {
         CatalogPlatformModels.ProductListingResponseV2 mockResponse = new CatalogPlatformModels.ProductListingResponseV2();
-        when(catalogPlatformService.getProducts(anyList(), anyList(), anyList(), anyList(), anyList(), anyString(), anyList(), anyInt(), anyInt()))
+        when(catalogPlatformService.getProducts(anyList(), anyList(), anyList(), anyList(), anyList(), anyString(), anyString(), anyList(), anyString(), anyList(), anyInt(), anyInt(), anyString(), anyString(), anyString()))
                 .thenReturn(mockResponse);
         CatalogPlatformModels.ProductListingResponseV2 response = platformController.getProducts(request);
         assertEquals(mockResponse, response);
@@ -79,7 +79,7 @@ public class PlatformControllerTest {
 
     @Test
     void testGetProducts_Exception() throws FDKServerResponseError, FDKException {
-        when(catalogPlatformService.getProducts(anyList(), anyList(), anyList(), anyList(), anyList(), anyString(), anyList(), anyInt(), anyInt()))
+        when(catalogPlatformService.getProducts(anyList(), anyList(), anyList(), anyList(), anyList(), anyString(), anyString(), anyList(), anyString(), anyList(), anyInt(), anyInt(), anyString(), anyString(), anyString()))
                 .thenThrow(new RuntimeException("Error"));
         RuntimeException exception = assertThrows(RuntimeException.class, () -> {
             platformController.getProducts(request);

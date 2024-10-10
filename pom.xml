@@ -23,7 +23,7 @@
 		<retrofit.version>2.3.0</retrofit.version>
 		<okhttp3.version>3.14.7</okhttp3.version>
 		<fdk-extension.version>0.6.5</fdk-extension.version>
-		<fdk-client.version>1.4.7</fdk-client.version>
+		<fdk-client.version>1.4.13</fdk-client.version>
 		<net.bytebuddy.experimental>true</net.bytebuddy.experimental>
 	</properties>
 
