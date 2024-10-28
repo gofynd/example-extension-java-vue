@@ -51,7 +51,7 @@ ext:
   base_url: ${EXTENSION_BASE_URL}
   webhook:
     api_path: "/api/webhook-events"
-    notification_email: "dev@fynd.com"
+    notification_email: "useremail@example.com"
     event_map:
       - name: "product/delete"
         handler: sampleHandler
