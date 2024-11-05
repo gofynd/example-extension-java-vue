@@ -49,6 +49,7 @@ ext:
   api_secret: ${EXTENSION_API_SECRET}
   scopes: ""
   base_url: ${EXTENSION_BASE_URL}
+  cluster: ${FP_API_DOMAIN:https://api.fynd.com}
   webhook:
     api_path: "/api/webhook-events"
     notification_email: "useremail@example.com"
@@ -58,3 +59,5 @@ ext:
         category: "company"
         version: 1
   
+# To Enable Debug logging uncomment below line
+# logging.level.com.sdk: DEBUG
