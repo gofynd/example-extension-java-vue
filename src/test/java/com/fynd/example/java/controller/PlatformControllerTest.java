@@ -51,10 +51,10 @@ public class PlatformControllerTest {
 
     @Test
     void testGetAppProducts_Success() throws Exception {
-        CatalogPlatformModels.RawProductListingResponse mockResponse = new CatalogPlatformModels.RawProductListingResponse();
+        CatalogPlatformModels.RawProductListingResponseSchema mockResponse = new CatalogPlatformModels.RawProductListingResponseSchema();
         when(catalogApplicationClient.getAppProducts(anyList(), anyList(), anyList(), anyList(), anyList(), anyInt(), anyInt(), anyString()))
                 .thenReturn(mockResponse);
-        CatalogPlatformModels.RawProductListingResponse response = platformController.getAppProducts("application_id", request);
+        CatalogPlatformModels.RawProductListingResponseSchema response = platformController.getAppProducts("application_id", request);
         assertEquals(mockResponse, response);
     }
 
