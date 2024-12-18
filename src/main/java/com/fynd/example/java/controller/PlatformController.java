@@ -32,7 +32,7 @@ public class PlatformController extends BasePlatformController {
     }
 
     @GetMapping(value = "/{application_id}/products", produces = "application/json")
-    public CatalogPlatformModels.RawProductListingResponse getAppProducts(@PathVariable("application_id") String applicationId, HttpServletRequest request) {
+    public CatalogPlatformModels.RawProductListingResponseSchema getAppProducts(@PathVariable("application_id") String applicationId, HttpServletRequest request) {
         try {
             PlatformClient platformClient = (PlatformClient) request.getAttribute("platformClient");
             return platformClient.application(applicationId).catalog.getAppProducts(Collections.emptyList(),Collections.emptyList(), Collections.emptyList(), Collections.emptyList(), Collections.emptyList(), 1, 10, "");
