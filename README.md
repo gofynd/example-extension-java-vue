@@ -28,6 +28,10 @@ fdk extension init --template java-vue
 ```
 Enter your preferred extension name and type, and you are all set.
 
+## Environment variables
+
+Do not commit secrets. The repository ignores `.env` (along with `app/.env.local` and `app/.env.*.local`). Create those files locally when your setup needs them, and use a safe template such as `.env.example` if you document required keys for other developers.
+
 ## Local Development
 To start local development, execute the following command:
 ```shell
